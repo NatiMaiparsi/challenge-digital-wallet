@@ -10,7 +10,4 @@ export class Wallet extends Model {
 
   @Column
   firstTransaction: string;
-
-  @Column
-  balance: number;
 }
