@@ -24,6 +24,6 @@ export class WalletsController {
 
   @Put('/favorite/:id')
   putFavorite(@Param('id') id: number): Promise<void> {
-    return this.walletsService.addFavorite(id);
+    return this.walletsService.editFavorite(id);
   }
 }

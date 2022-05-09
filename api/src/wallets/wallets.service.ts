@@ -58,8 +58,13 @@ export class WalletsService {
     return allWalletsInfo;
   }
 
-  async addFavorite(id: number): Promise<void> {
-    await this.walletModel.update({ isFavorite: true }, { where: { id } });
+  async editFavorite(id: number): Promise<void> {
+    const wallet = await this.walletModel.findOne({ where: { id } });
+    if (wallet.isFavorite === false) {
+      await this.walletModel.update({ isFavorite: true }, { where: { id } });
+    } else {
+      await this.walletModel.update({ isFavorite: false }, { where: { id } });
+    }
   }
 
   async getEtherPrices(): Promise<Price> {
