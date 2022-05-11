@@ -77,4 +77,10 @@ export class WalletsService {
       ethusd: parseFloat(prices.ethusd),
     };
   }
+
+  async getFavorites(): Promise<Wallets[]>{
+    const wallets = await this.getWalletsInfo()
+    const favorites = wallets.filter(wallet => wallet.isFavorite === true)
+    return favorites
+  }
 }

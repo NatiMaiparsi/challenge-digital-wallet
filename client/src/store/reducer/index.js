@@ -1,8 +1,9 @@
-import { GET_PRICES, GET_WALLETS } from "../actions/types"
+import { GET_FAVORITES, GET_PRICES, GET_WALLETS } from "../actions/types"
 
 const inicialState = {
     wallets: [],
-    prices: []
+    prices: [],
+    favorites: [],
 }
 
 export default function reducer(state = inicialState, action){
@@ -16,6 +17,11 @@ export default function reducer(state = inicialState, action){
             return{
                 ...state,
                 prices: action.payload
+            }
+        case GET_FAVORITES:
+            return{
+                ...state,
+                favorites: action.payload
             }
         default:
             return state

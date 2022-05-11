@@ -6,7 +6,11 @@ import { WalletsService } from './wallets.service';
 @Controller('wallets')
 export class WalletsController {
   constructor(private walletsService: WalletsService) {}
-
+  
+  @Get('/favorites')
+  getFavorites(): Promise<Wallets[]>{
+    return this.walletsService.getFavorites()
+  }
   @Get('/prices')
   getPrices(): Promise<Price> {
     return this.walletsService.getEtherPrices();
@@ -26,4 +30,5 @@ export class WalletsController {
   putFavorite(@Param('id') id: number): Promise<void> {
     return this.walletsService.editFavorite(id);
   }
+
 }

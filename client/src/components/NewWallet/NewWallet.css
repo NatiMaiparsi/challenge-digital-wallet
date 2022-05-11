@@ -1,0 +1,64 @@
+#container-sidebar-newwallet{
+    padding-top: 60px;
+    display: flex
+}
+
+#card-newWallet-container{
+    margin-top: 80px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#newWallet-container {
+    width: 500px;
+    height: 230px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  #newWallet-container form{
+    width: 460px;
+    height: 140px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: #c1e5c0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #newWallet-container form span{
+      margin-top: 30px;
+      font-size: 20px
+  }
+
+  #newWallet-container form input{
+    margin-bottom: 30px;
+    width: 400px;
+    height: 20px
+}
+
+  #button-container{
+    width: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+  }
+  #button-container button {
+    background-color: transparent;
+    color: #2ec5ce;
+    cursor: pointer;
+    width: 160px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    border: none;
+  }

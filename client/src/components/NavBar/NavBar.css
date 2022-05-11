@@ -1,0 +1,27 @@
+#navbar{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    top: 0;
+}
+
+#logo-container{
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#logo-container span{
+    color: white;
+    margin-left: 3px;
+}
+
+a{
+    text-decoration: none;
+}
