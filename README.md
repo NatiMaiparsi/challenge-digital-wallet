@@ -17,6 +17,8 @@
     - DB_NAME = (nombre de la base de datos)
 
     - PORT = 3001
+
+    - API_KEY = (api key de https://etherscan.io/apis)
     
 
 - Iniciar el backend con npm start en la carpeta Api
